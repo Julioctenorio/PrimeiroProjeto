@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.grid{
+			display: grid;
+			/*grid-template-rows: 1fr 2fr 1fr 2fr;*/
+			grid-template-columns: repeat(2, 1fr);
+			gap: 15px;
+			row-gap: 30px;
+		}
+		.jul{
+			grid-row: 1;
+			grid-column: 2;
+		}
+		.preto{
+			grid-row-start: 1;
+			grid-row-end: 2;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="grid">
+		<div class="preto" style="background-color: black;"></div>
+		<div style="background-color: yellow;"></div>
+		<div class="jul" style="background-color: green;"></div>
+		<div style="background-color: blue;"><p>Ola</p></div>
+	</div>
+</body>
+</html>

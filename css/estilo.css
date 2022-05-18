@@ -1,0 +1,220 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: white	;
+	font-family: ExtraLight, helvetica, sans-serif;
+}
+ul{
+	list-style:none ;
+	font-style: italic;
+}
+a{
+	text-decoration: none;
+	padding: 8px;
+	color: rgb(98, 230, 245);
+	transition: 1000ms;
+	border-radius: 15px;
+}
+a:hover{
+	background: rgb(98, 230, 245);
+	color: black;
+	padding: 8px;
+	border-radius: 15px;
+	transition: 350ms;
+}
+
+body{
+	height: 100vh;
+	background: url(fundo3.jpg) no-repeat center center fixed;
+}
+header{
+	width: 100%;
+	background: black;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0 5px;
+	box-shadow: 1px 1px 10px 1px rgb(98, 230, 245);
+	margin-bottom: 100px;
+}
+header ul{
+	display: flex;
+	padding: 5px;
+}
+header ul li{
+	padding: 5px;
+}
+header img:hover{
+	background: rgb(98, 230, 245);
+	padding: 5px;
+	border-radius: 15px;
+	transition: 500ms;
+}
+.form{
+	width: 40%;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.form input{
+	width: 50%;
+	text-align: center;
+	padding: 3px 7px;
+	border: none;
+	border-radius: 10px 0px 0px 10px;
+}
+.form input:hover{
+	background-color: #ebf2f2;
+	color: black;
+}
+.form button{
+	width: 15%;
+	padding: 3px 7px;
+	color: black;
+	background:linear-gradient(to right, #535759 50%, darkgray 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+	border: none;
+	border-radius: 0px 10px 10px 0px;
+	cursor: pointer;
+	transition: 300ms;
+	margin-left: -5px;
+	margin-top: 10px;
+}
+.form button:hover{
+	background-position: left bottom;
+	color: white;
+}
+.container{
+	text-align: center;
+	margin: 75px 10px;
+}
+.container .name h1{
+	font-size: 60px;
+}
+.container .name h5{
+	font-size: 25px;
+}
+.container .name h1, .container .name h5{
+	margin: 10px;
+}
+#about{
+	margin: 15px;
+}
+#about p{
+	max-width: 600px;
+	margin: 0 auto;
+	background: rgb(98, 230, 245);
+	border-radius: 5px;
+	padding: 5px;
+}
+#about summary:hover{
+	color: rgb(98, 230, 245);
+}
+.flex{
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	margin-top: 100px;
+}
+.flex div{
+	margin: 15px 20px;
+	padding: 10px;
+	flex-basis: 100%;
+	/*background-color: none;*/
+	border-style: solid 1px;
+	border-radius: 7px;
+	background-color: none;/* rgb(98, 230, 245);*/
+	transition: 500ms;
+}
+.flex div:hover{
+	border: solid 2px white;
+	padding: 15px;
+	transition: 500ms;
+	background-color: rgb(98, 230, 245);
+}
+.flex img{
+	max-width: 190px;
+}
+.flex summary{
+    list-style-type: '+';
+}
+
+.flex details[open] summary{
+    list-style-type: '-';
+}
+.flex p{
+	background: rgb(98, 230, 245);
+	color: white;
+	padding: 2px;
+}
+.tamanho1{
+	width: 150px;
+}
+#tamanho2{
+	width: 190px;
+	padding: 10px 0;
+}@media only screen and (max-width: 720px){
+	.form{
+		width: 80%;
+	}
+	header{
+		width: 100%;
+	}
+}
+/*}@media only screen and (max-width: 500px){
+	.form{
+		width: 80%;
+	}
+	header{
+		width: 100%;
+		display: flex;
+	}
+	.flex div{
+		margin: 0px 2px;
+		width: 60px;
+	}
+	.flex img{
+		max-width: 65px;
+	}
+}*/
+@media only screen and (max-width: 480px){
+	header{
+		display: flex;
+	}
+	header img{
+		width: 50px;
+	}
+	body{
+		background: url(fundo3.jpg) no-repeat center center fixed;
+		background-size: 200vh;
+		align-items: center;
+	}
+	.container .name h1{
+		font-size: 45px;
+	}
+	.container .name h5{
+		font-size: 23px;
+	}
+	.container{
+		align-items: center;
+	}
+	.flex div{
+		/*margin: auto 2px;*/
+		width: 100px;
+		align-items: right;
+	}
+	.flex img{
+		max-width: 85px;
+	}
+	.form input{
+		width: 70%;
+		border: none;
+		border-radius: 10px 0px 0px 10px;
+	}
+	.form button{
+		width: 30%;
+		margin-left: -5px;
+		margin-top: 10px;
+	}
+}
